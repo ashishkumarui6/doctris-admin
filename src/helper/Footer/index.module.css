@@ -1,0 +1,13 @@
+.footer{
+    box-shadow: 0 0 3px #3c485826 !important;
+    padding: 1rem 0;
+    color: #adb5bd;
+}
+
+.container{
+    width: 100%;
+}
+
+.content{
+    padding: 0 0.8rem;
+}
