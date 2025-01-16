@@ -8,10 +8,10 @@ const Dashboard = () => {
   return (
     <>
       <div className={styles.dashboard}>
-        <div>
+        <div className={styles.title}>
           <SectionTitle name="Dashboard" />
         </div>
-        <div className={styles.dash_card}>
+        <div className={styles.dashboard_card}>
           {dashCrad.map((it) => {
             return (
               <DashCard

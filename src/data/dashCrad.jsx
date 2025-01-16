@@ -19,4 +19,22 @@ export const dashCrad = [
     number: "558",
     name: "Patients",
   },
+  {
+    id: "1",
+    icon: <FaBed />,
+    number: "558",
+    name: "Patients",
+  },
+  {
+    id: "1",
+    icon: <FaBed />,
+    number: "558",
+    name: "Patients",
+  },
+  {
+    id: "1",
+    icon: <FaBed />,
+    number: "558",
+    name: "Patients",
+  },
 ];
