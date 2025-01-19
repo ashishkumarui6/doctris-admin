@@ -33,7 +33,7 @@ const Appointment = () => {
       )}
 
       <div className={styles.appointment_container}>
-        {isModalName === "AppointmentTogale" && (
+        {isModalName === "AppointmentToggale" && (
           <Modal>
             <div className={styles.apponitmentCard}>
               <ApponitmentCard />
@@ -65,7 +65,9 @@ const Appointment = () => {
               </div>
               <div
                 onClick={() =>
-                  Dispatch(uiActions.onModalOpen({ name: "AppointmentTogale" }))
+                  Dispatch(
+                    uiActions.onModalOpen({ name: "AppointmentToggale" })
+                  )
                 }
               >
                 Apponitment

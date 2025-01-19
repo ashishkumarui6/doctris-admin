@@ -28,19 +28,85 @@ const ApponitmentCard = () => {
           </div>
           <div className={styles.mid_box}>
             <div className={styles.input_mid}>
-              <InputField placeholder="Patient Name :" />
-              <InputField placeholder="Patient Name :" />
-              <InputField placeholder="Patient Name :" />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  rowGap: "10px",
+                }}
+              >
+                <div>Departments</div>
+                <div>
+                  <InputField placeholder="Patient Name :" />
+                </div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  rowGap: "10px",
+                }}
+              >
+                <div>Doctor</div>
+                <div>
+                  <InputField placeholder="Patient Name :" />
+                </div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  rowGap: "10px",
+                }}
+              >
+                <div>Your Email *</div>
+                <div>
+                  <InputField placeholder="Your email :" />
+                </div>
+              </div>
             </div>
             <div className={styles.input_mid}>
-              <InputField placeholder="Patient Name :" />
-              <InputField placeholder="Patient Name :" />
-              <InputField placeholder="Patient Name :" />
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  rowGap: "10px",
+                }}
+              >
+                <div>Your Phone *</div>
+                <div>
+                  <InputField placeholder="Your Phone :" />
+                </div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  rowGap: "10px",
+                }}
+              >
+                <div>Date :</div>
+                <div>
+                  <InputField placeholder="dd-mm-yyyy :" />
+                </div>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  rowGap: "10px",
+                }}
+              >
+                <div>Time :</div>
+                <div>
+                  <InputField placeholder="03:30 PM :" />
+                </div>
+              </div>
             </div>
           </div>
           <div className={styles.input_top}>
-            <div>Comments *</div>
-            <InputField placeholder="Patient Name :" />
+            <div style={{ marginBottom: "0.5rem" }}>Comments *</div>
+            <InputField placeholder="Your Message :" />
           </div>
           <div className={styles.btn}>
             <Button name="Book An Appointment" />

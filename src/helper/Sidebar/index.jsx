@@ -11,12 +11,17 @@ import Dashboard from "../../pages/Dashboard";
 import Appointment from "../../pages/Appointments";
 import Doctors from "../../pages/Doctors";
 import Pataints from "../../pages/Patients";
+import AddDoctors from "../../pages/AddDoctors";
+import DoctorProfile from "../../pages/DoctorProfile";
+import AddPataints from "../../pages/AddPataints";
+import AllPataints from "../../pages/AllPataints";
+import PataintsProfile from "../../pages/PataintsProfile";
 
 const Main = () => {
   return (
     <>
       <div className={styles.sidebar_page_wrapper}>
-        <nav className={styles.sidebar_wrapper}>
+        <nav className={styles.sidebar_wrappear}>
           <div className={styles.sidebar_top}>
             <Link to="/">
               <img src={logo} alt="logo" />
@@ -48,11 +53,51 @@ const Main = () => {
               </Link>
             </li>
             <li className={styles.sidebar_dropdown}>
+              <Link to="/adddoctors">
+                <span>
+                  <FaUserDoctor />
+                </span>
+                Add Doctors
+              </Link>
+            </li>
+            <li className={styles.sidebar_dropdown}>
+              <Link to="/doctorsprofile">
+                <span>
+                  <FaUserDoctor />
+                </span>
+                Doctors Profile
+              </Link>
+            </li>
+            <li className={styles.sidebar_dropdown}>
               <Link to="/pataints">
                 <span>
                   <GrUserAdd />
                 </span>
                 Pataints
+              </Link>
+            </li>
+            <li className={styles.sidebar_dropdown}>
+              <Link to="/allpataints">
+                <span>
+                  <GrUserAdd />
+                </span>
+                All Pataints
+              </Link>
+            </li>
+            <li className={styles.sidebar_dropdown}>
+              <Link to="/addpataints">
+                <span>
+                  <GrUserAdd />
+                </span>
+                Add Pataints
+              </Link>
+            </li>
+            <li className={styles.sidebar_dropdown}>
+              <Link to="/pataintsprofile">
+                <span>
+                  <GrUserAdd />
+                </span>
+                Pataints Profile
               </Link>
             </li>
           </ul>
@@ -72,8 +117,28 @@ const Main = () => {
               element={<Main_Roots element={<Doctors />} />}
             ></Route>
             <Route
+              path="/adddoctors"
+              element={<Main_Roots element={<AddDoctors />} />}
+            ></Route>
+            <Route
+              path="/doctorsprofile"
+              element={<Main_Roots element={<DoctorProfile />} />}
+            ></Route>
+            <Route
               path="/pataints"
               element={<Main_Roots element={<Pataints />} />}
+            ></Route>
+            <Route
+              path="/allpataints"
+              element={<Main_Roots element={<AllPataints />} />}
+            ></Route>
+            <Route
+              path="/addpataints"
+              element={<Main_Roots element={<AddPataints />} />}
+            ></Route>
+            <Route
+              path="/pataintsprofile"
+              element={<Main_Roots element={<PataintsProfile />} />}
             ></Route>
           </Routes>
         </main>
